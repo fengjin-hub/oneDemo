@@ -8,21 +8,59 @@
     <title>Document</title>
     <link rel="stylesheet" href="./reset.css">
     <style>
-        .outer{
-            margin: 50px ;
+        .outer {
+            margin: 50px;
+            width: 212px;
+            border-top: 1px solid green;
+
         }
-        h2 {
+
+        a>h2 {
             border-top: 1px solid red;
-            padding-top: 5px;
-            display: inline;
+            height: 30px;
+            line-height: 30px;
+            display: inline-block;
+            margin-top: -1px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .imag_link img {
+            border: 1px solid gray;
+            border-radius: 5px;
+            height: 150px;
+            width: 200px;
+            background-color: antiquewhite;
+            padding: 5px;
+        }
+
+        li>a {
+            height: 30px;
+            line-height: 30px;
+            font-size: 15px;
+            color: red;
         }
     </style>
 </head>
 
 <body>
     <div class="outer">
-        <h2>体育</h2>
-        <a href=""><img src="./image/1.avif" alt=""></a>
+        <div style="height: 200px;">
+            <a href="https://news.163.com/">
+                <h2>体育</h2>
+                <div class="imag_link" >
+                    <img src="./image/1.png" alt="车子">
+            
+            <h2 style="color: green;margin-top: -30px;padding-left: 15px;">欧美人喝青菜值</h2>
+                </div>
+            </a>
+        </div>
+        <ul>
+            <li><a href="#">电话就开始打号机</a></li>
+            <li><a href="#">电话就开始打号机</a></li>
+            <li><a href="#">电话就开始打号机</a></li>
+            <li><a href="#">电话就开始打号机</a></li>
+        </ul>
     </div>
 </body>
 
