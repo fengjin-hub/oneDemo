@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./font_file/css/all.css">
     <style>
         body {
-            background-color: darkgrey;
+            background-color: white;
         }
 
         .warp {
@@ -19,14 +19,15 @@
             margin: 0 auto;
             border-radius: 5px;
             background-color: white;
-
+            box-shadow: 0 0 10px gray;
         }
 
         .haibao {
-            width: 300px;
+            width: 100%;
             height: 160px;
             border-radius: 5px 5px 0 0;
             background-image: url(./image/dsn.webp);
+            background-repeat: no-repeat;
             background-size: 300px;
         }
 
@@ -34,7 +35,7 @@
         .type,
         .desc,
         .grade {
-            margin-left: 20px;
+            margin: 0 20px;
             color: darkgray;
         }
 
@@ -57,19 +58,27 @@
             margin-top: 20px;
             margin-bottom: 20px;
         }
-        .line{
+
+        .line {
             background-color: darkgrey;
             width: 300px;
             height: 1px;
             margin-bottom: 20px;
         }
-        .star,.share{
+
+        .star,
+        .share {
             display: inline-block;
-        }
-        .star{
-            margin-right: 120px;
+            color: darkgray;
         }
 
+        .star:hover {
+            color: gold;
+        }
+
+        .star {
+            margin-right: 120px;
+        }
     </style>
 </head>
 
@@ -80,23 +89,23 @@
             <span>Animation films</span>
         </div>
         <div class="type">
-            <i class="fas fa-map-marker-alt"></i>
+            <i class="fas fa-map-marker-alt" style="vertical-align: text-top;"></i>
             <span>Animations</span>
         </div>
-        <div class="desc"><span>Princess Long Hair is a 3D animation film produced by Disney Studio in 2010.
-                Disney Studio's first work, which is adapted from Green's fairy tale "Lettuce Girl"</span>
+        <div class="desc"><span>Princess Long Hair is a animation film produced by Disney Studio in 2010.
+                Disney Studio's first work, which is adapted from Green's fairy talent prety niec.</span>
         </div>
         <div class="line"></div>
         <div class="grade">
             <div class="star">
-                <i class="fas fa-star" style="color: gold;"></i>
-                <i class="fas fa-star" style="color: gold;"></i>
-                <i class="fas fa-star" style="color: gold;"></i>
-                <i class="fas fa-star" style="color: darkgray;"></i>
-                <i class="fas fa-star" style="color: darkgray;"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
             </div>
             <div class="share">
-                <i class="fab fa-facebook" style="color: darkgray;"></i>
+                <i class="fab fa-facebook"></i>
             </div>
         </div>
     </div>
