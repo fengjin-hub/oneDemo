@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./reset.css"> -->
+    <link rel="stylesheet" href="./font_file/css/all.css">
+    <style>
+        body {
+            background-color: darkgrey;
+        }
+
+        .warp {
+            width: 300px;
+            height: 450px;
+            margin: 0 auto;
+            border-radius: 5px;
+            background-color: white;
+
+        }
+
+        .haibao {
+            width: 300px;
+            height: 160px;
+            border-radius: 5px 5px 0 0;
+            background-image: url(./image/dsn.webp);
+            background-size: 300px;
+        }
+
+        .title,
+        .type,
+        .desc,
+        .grade {
+            margin-left: 20px;
+            color: darkgray;
+        }
+
+        .title {
+            color: gray;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .title span {
+            font-size: 20px;
+        }
+
+        .type span {
+            font-size: 20px;
+            margin: 0 5px;
+        }
+
+        .desc {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .line{
+            background-color: darkgrey;
+            width: 300px;
+            height: 1px;
+            margin-bottom: 20px;
+        }
+        .star,.share{
+            display: inline-block;
+        }
+        .star{
+            margin-right: 120px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="warp">
+        <div class="haibao"></div>
+        <div class="title">
+            <span>Animation films</span>
+        </div>
+        <div class="type">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Animations</span>
+        </div>
+        <div class="desc"><span>Princess Long Hair is a 3D animation film produced by Disney Studio in 2010.
+                Disney Studio's first work, which is adapted from Green's fairy tale "Lettuce Girl"</span>
+        </div>
+        <div class="line"></div>
+        <div class="grade">
+            <div class="star">
+                <i class="fas fa-star" style="color: gold;"></i>
+                <i class="fas fa-star" style="color: gold;"></i>
+                <i class="fas fa-star" style="color: gold;"></i>
+                <i class="fas fa-star" style="color: darkgray;"></i>
+                <i class="fas fa-star" style="color: darkgray;"></i>
+            </div>
+            <div class="share">
+                <i class="fab fa-facebook" style="color: darkgray;"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
