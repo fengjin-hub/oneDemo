@@ -7,38 +7,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./font_file/css/all.css">
     <style>
-        .nav {
+        .outer_wrap {
             background-color: #DEE1E6;
+            width: 100%;
         }
 
-        .nav li {
-            display: inline-block;
+        .inner_wrap {
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
         }
-        .nav a{
-            height: 5px;
-            line-height: 5px;
+
+        .inner_wrap {
+            height: 40px;
+            line-height: 40px;
+            color: gray;
         }
-        ul>li:first-child{
-            
+
+        .inner_wrap span:hover {
+            color: red;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .item {
+            margin: 0 10px;
+        }
+
+        .line {
+            width: 1px;
+            height: 12px;
+            margin: 14px 0;
+            background-color: #CCCCCC;
+        }
+
+        .loc_list {
+            width: 320px;
+            height: 430px;
+            border: 1px solid gray;
+            display: none;
+            position: absolute;
+            box-shadow: 0 1px 1px;
+            top: 39px;
+            z-index: 99;
+        }
+
+        .loc {
+            padding: 0 10px;
+            z-index: 999;
+            position: relative;
+        }
+
+        .location:hover .loc_list {
+            display: block;
+        }
+
+        .location:hover {
+            background-color: white;
         }
     </style>
 </head>
 
 <body>
-    <div class="nav">
-        <ul>
-            <li><a href="">北京</a></a></li>
-            <li><a href="">你好，请登录</a></li>
-            <li><a href="" style="color: red;">免费注册</a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-        </ul>
+    <div class="outer_wrap">
+        <div class="inner_wrap">
+            <div class="location">
+                <div class="loc">
+                    <i class="fas fa-map-marker-alt" style="color: red;"></i>
+                    <span>湖南</span>
+                </div>
+                <div class="loc_list">1</div>
+            </div>
+
+            <div class="menu">
+                <div class="login">
+                    <a href=""><span>你好，请登录</span></a>
+                </div>
+                <div class="item">
+                    <a href="" style="color: red;">
+                        <span>免费注册</span></a>
+                </div>
+                <div class="line"></div>
+                <div class="item">
+                    <a href=""><span>我的订单</span></a>
+                </div>
+                <div class="line"></div>
+                <div class="item">
+                    <a href=""><span>我的京东</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </div>
+                <div class="line"></div>
+                <div class="item">
+                    <a href="">
+                        <span style="color: red;">企业采购</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </div>
+                <div class="line"></div>
+                <div class="item">
+                    <a href="">
+                        <span>商家服务</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </div>
+                <div class="line"></div>
+                <div class="item">
+                    <a href="">
+                        <span>网站导航</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </div>
+                <div class="line"></div>
+                <div class="item">
+                    <a href=""><span>手机京东</span></a>
+                </div>
+                <div class="line"></div>
+                <div class="item">
+                    <a href=""><span>无网站障碍</span></a>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
