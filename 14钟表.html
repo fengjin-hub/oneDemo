@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            width: 600px;
+            height: 600px;
+            background-image: radial-gradient(at top left, #707370, #A3A6A3);
+            border-radius: 50%;
+            margin: 100px auto;
+            /*处理外边距重叠 */
+            position: absolute;
+        }
+
+        .shadow {
+            width: 574px;
+            height: 574px;
+            background-image: radial-gradient(at top left, #E5E7E4, #FAFCF9);
+            border-radius: 50%;
+            margin: 13px;
+            position: absolute;
+        }
+
+        .clock-surface {
+            width: 550px;
+            height: 550px;
+            background-image: radial-gradient(at top left, #FCFFFC, #EEF1EE);
+            border-radius: 50%;
+            margin: 12px;
+            position: absolute;
+        }
+
+        .clock-number {
+            width: 550px;
+            height: 550px;
+            /* transform: rotateZ(45deg); */
+            background-color: red;
+            position: absolute;
+
+        }
+        .number12{
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 35px;
+            position: absolute;
+            left: 50%;
+        }
+        .number3{
+            font-size: 35px;
+            font-weight: bolder;
+            position: absolute;
+            top:50%
+        }
+        .number6{
+            font-size: 35px;
+            font-weight: bolder;
+            position: absolute;
+            top:50%
+        }
+        .number9{
+            font-size: 35px;
+            font-weight: bolder;
+            position: absolute;
+            top:50%
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="shadow">
+            <div class="clock-surface">
+                <div class="clock-number">
+                    <div class="number12">12</div>
+                    <div class="number3">3</div>
+                    <div class="number6">6</div>
+                    <div class="number9">9</div>
+                    <div class="clock-hand">
+                        <div class="center-point">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
